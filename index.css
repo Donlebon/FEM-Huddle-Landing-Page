@@ -1,0 +1,196 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Typography and Styling*/
+
+h1, p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h1, h3, p{
+    color: white;
+}
+
+
+/* Global */
+
+body{
+    background-color: hsl(257, 40%, 49%);
+}
+
+/* Mobile */
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.image__container{
+    flex-basis: 100%;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.mobile__image{
+    width: 100%;
+}
+
+.huddle{
+    position: absolute;
+    left: 8%;
+    top: 5%;
+}
+
+.mockup__image{
+    position: absolute; 
+    min-width: 30%;
+    max-width: 90%;
+    right: 5%;
+    top: 20%;
+}
+
+/* Article */
+
+.article{
+    width: 18.7em;
+    margin: auto;
+    text-align: center;
+}
+
+.article-title{
+    margin-bottom: 1em;
+}
+
+.article-body{
+    margin-bottom: 1.5em;
+}
+
+button{
+    margin-bottom: 5em;
+    color: hsl(257, 40%, 49%);
+    border-style: none;
+    padding: 1em 5.5em;
+    border-radius: 2em;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+footer{
+    margin: auto;
+    color: white;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.fab{
+    margin: 0 0.3em 0;
+    padding: 0.5em;
+    border-radius: 5em;
+    border: solid 1px white;
+}
+
+.fa-facebook-f{
+    padding-left: 0.65em;
+    padding-right: 0.65em;
+}
+
+/* Desktop */
+
+@media(min-width: 810px){
+
+    body{
+        background: url("bg-desktop.svg");
+        background-color: hsl(257, 40%, 49%);
+    }
+    .container{
+        flex-direction: row;
+        margin-top: 5em;
+        align-items: center;
+    }
+
+    /* Image Container */
+
+    .whole-image-container{
+        margin: auto;
+        padding-left: 2em;
+        margin-top: 4em;
+    }
+
+
+    .image__container{
+        position: static;
+        margin-bottom: 0;
+        width: 575px;
+        margin: auto;
+    }
+
+    .mockup__image{
+        position: static; 
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mobile__image{
+        display: none;
+    }
+
+    .huddle{
+        top: 7%;   
+        left: 10%;
+    }
+
+
+
+    /* Article */
+
+    .article{
+       margin: 0;
+       text-align: left;
+       width: 29em;
+       margin-left: 5em;
+       margin-top: 3em;
+    }
+
+    .article-title{
+        width: 90%;
+    }
+
+    .article-body{
+        max-width: 90%;
+    }
+
+    footer{
+        margin: 0;
+        min-width: 10em;
+        margin-left: 14em;
+    }
+}
+
+/* Hover */
+
+.button:hover{
+    background-color:hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: white;
+}
+
+.fab:hover{
+    border: solid 1px hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+}
